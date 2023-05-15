@@ -139,24 +139,10 @@ function reportPagination() {
 
     leftBtn.addEventListener('click', handleLeftClick);
     rightBtn.addEventListener('click', handleRightClick);
-
-    /* rightBtn.addEventListener("click", function () {
-        zIndex++;
-        reportImg1.style.zIndex = (zIndex % 2 === 0) ? 0 : 1;
-        reportImg2.style.zIndex = (zIndex % 2 === 0) ? 1 : 0;
-    });
-
-    leftBtn.addEventListener("click", function () {
-        zIndex--;
-        reportImg1.style.zIndex = (zIndex % 2 === 0) ? 0 : 1;
-        reportImg2.style.zIndex = (zIndex % 2 === 0) ? 1 : 0;
-    }); */
-
-    
 }
 
 
-setInterval(changeOrder, 5000);
+//setInterval(changeOrder, 5000);
 
 function changeOrder() {
     const allSlides = document.querySelectorAll(".single-slide");
