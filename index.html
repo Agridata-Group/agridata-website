@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./resources/css/app.css">
+
     <script src="./resources/js/app.js"></script>
     <script src="https://kit.fontawesome.com/b5b3e1c074.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -13,7 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
-        
+    <link rel="stylesheet" href="./resources/css/app.css?1">
+
     <!-- Primary Meta Tags -->
     <title>AGRIDATA PORTAL</title>
     <link rel="icon" href="./assets/image/favicon.ico"/>
@@ -324,27 +325,14 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-lightblue text-center sticky-top">
+    <div class="container-fluid bg-lightblue text-center">
         <div class="container-md py-3 col-md-8">
             <h2 class="medium-title">Achieve More with Less Effort: Our App Has You Covered</h2>
         </div>
-        <div id="secondary-nav" class="container-md row g-2 mx-auto pb-3 secondary-nav">
+    </div>
+    <section class="container-fluid bg-lightblue text-center sticky-top py-3" style="top: 100px;">
+        <div id="secondary-nav" class="container-md row mx-auto secondary-nav">
             <div class="d-flex justify-content-center">
-                <!-- <a href="#invoicing">
-                    <button class="light-btn" type="button">Invoicing</button>
-                </a>
-                <a href="#payment">
-                    <button class="sec-nav-btn ms-3" type="button">Payments</button>
-                </a>
-                <a href="#report">
-                    <button class="sec-nav-btn ms-3" type="button">Reports</button>
-                </a>
-                <a href="#customization">
-                    <button class="sec-nav-btn ms-3" type="button">Customization</button>
-                </a>
-                <a href="#support">
-                    <button class="sec-nav-btn ms-3" type="button">Support</button>
-                </a> -->
                 <a href="#invoicing" class="sec-nav-btn"> Invoicing </a>
                 <a href="#payment" class="sec-nav-btn ms-3"> Payments </a>
                 <a href="#report" class="sec-nav-btn ms-3"> Reports </a>
@@ -352,7 +340,7 @@
                 <a href="#support" class="sec-nav-btn ms-3"> Support </a>
             </div>
         </div>
-    </div>
+    </section>
 
     <div>
         <section class="container-fluid bg-lightblue section" id="invoicing">
@@ -543,15 +531,7 @@
     includeHTML();
     //secBtnToggle();
     reportPagination();
-
-    // Get the offset value
-    const offset = 310;
-
-    // Initialize the scrollspy
-    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#secondary-nav',
-        offset: offset
-    });
+    myFunction();
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"

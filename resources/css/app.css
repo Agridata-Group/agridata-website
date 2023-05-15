@@ -1219,6 +1219,10 @@ ul {
     opacity: 1;
 }
 
+.sticky-top{
+    top: -1px!important;
+}
+
 /*-------------------------
         Footer section
 --------------------------*/
@@ -1381,7 +1385,7 @@ ul {
     }
 
     .indicator {
-        display: none;
+        display: none!important;
     }
 
     .button-arrow {
@@ -1441,6 +1445,10 @@ ul {
         
         .drpdown-content {
             height: auto;
+        }
+
+        .hover:hover {
+            border-bottom: none
         }
     
     /*--------------------------------*/
@@ -1532,6 +1540,10 @@ ul {
         
         .drpdown-content {
             height: auto;
+        }
+
+        .hover:hover {
+            border-bottom: none
         }
     
     /*--------------------------------*/
