@@ -580,7 +580,7 @@ ul {
     color: #FFFFFF;
     padding: 10px 32px;
     border: none;
-
+    text-decoration: none;
 }
 
 .active,
