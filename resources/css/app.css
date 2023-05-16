@@ -273,7 +273,7 @@ ul {
 
 .text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 26px;
     color: #010F41;
 
@@ -1062,7 +1062,7 @@ ul {
 }
 
 .about-us-journey-right {
-    padding: 10%;
+    padding: 7%;
 }
 
 .about-us-journey-right h2 {
@@ -1070,7 +1070,7 @@ ul {
 }
 
 .about-us-journey-right p {
-    padding-top: 10%;
+    
     font-size: 18px;
 
 }
