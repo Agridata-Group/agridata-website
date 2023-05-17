@@ -3,7 +3,6 @@
 
 <head>
 
-    <script src="./resources/js/app.js"></script>
     <script src="https://kit.fontawesome.com/b5b3e1c074.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -14,6 +13,9 @@
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./resources/css/app.css?1">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="./resources/js/app.js"></script>
 
     <!-- Primary Meta Tags -->
     <title>AGRIDATA PORTAL</title>
@@ -41,7 +43,7 @@
     <meta property="twitter:image"  content="https://site.agridataportal.com/assets/image/Agridata%20Logo%201.png">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#secondary-nav" data-bs-smooth-scroll="true" data-bs-offset="10">
+<body data-bs-spy="scroll" data-bs-target="#secondary-nav" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -40%">
     <div w3-include-html="./resources/components/nav-bar.html"></div>
 
     <!-- <div class="container-md">
@@ -329,20 +331,18 @@
             <h2 class="medium-title">Achieve More with Less Effort: Our App Has You Covered</h2>
         </div>
     </div>
-    <section class="container-fluid bg-lightblue text-center sticky-top py-3" style="top: 100px;">
-        <div id="secondary-nav" class="container-fluid container-lg row mx-auto secondary-nav" style="overflow-x: scroll;">
-            <div class="d-flex justify-content-center">
-                <a href="#invoicing" class="sec-nav-btn"> Invoicing </a>
-                <a href="#payment" class="sec-nav-btn ms-3"> Payments </a>
-                <a href="#report" class="sec-nav-btn ms-3"> Reports </a>
-                <a href="#customization" class="sec-nav-btn ms-3"> Customization </a>
-                <a href="#support" class="sec-nav-btn ms-3"> Support </a>
-            </div>
-        </div>
+    <section class="bg-lightblue sticky-top py-3" style="top: 100px;">
+        <nav id="secondary-nav" class="d-flex container-fluid mx-0 justify-content-md-center overflow-auto" style="">
+            <a href="#invoicing" class="sec-nav-btn">Invoicing</a>
+            <a href="#payment" class="sec-nav-btn ms-3">Payments</a>
+            <a href="#report" class="sec-nav-btn ms-3">Reports</a>
+            <a href="#customization" class="sec-nav-btn ms-3">Customization</a>
+            <a href="#support" class="sec-nav-btn ms-3">Support</a>
+        </nav>
     </section>
 
     <section>
-        <section class="container-fluid bg-lightblue section" id="invoicing">
+        <section class="container-fluid bg-lightblue section py-3" id="invoicing">
             <div class="container-md py-5">
                 <div class="row">
                     <div class="col-md-6">

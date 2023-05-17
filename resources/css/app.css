@@ -668,10 +668,6 @@ ul {
     color: #00429B;
     background: #D4E7FF;
 }
-.sec-nav-btn:hover {
-    color: #00429B;
-    background: #D4E7FF;
-}
 
 .learn-more {
     text-decoration: underline;
@@ -1706,4 +1702,12 @@ ul {
         font-size: 32px;
         line-height: 40px;
     }
+}
+
+#secondary-nav {
+    scroll-snap-type: x mandatory;
+}
+
+#secondary-nav a{
+    scroll-snap-align: start;
 }

@@ -218,3 +218,47 @@ function topNav() {
         x.className = "topnav";
     }
 }
+
+$(document).ready(function () {
+    $(window).on('activate.bs.scrollspy', function (obj) {
+        var x = $("#secondary-nav .active").text();
+        console.log(x);
+
+
+        var sliderElement = document.querySelector('#secondary-nav'),
+            sliderSlides = sliderElement.querySelectorAll('a').length,
+            slideWidth = 83,
+            currentSliderScrollPos = 0;
+
+        switch (x) {
+            case 'Invoicing':
+                currentSliderScrollPos = slideWidth * 0;
+                break;
+            case 'Payments':
+                currentSliderScrollPos = slideWidth * 0;
+                break;
+            case 'Reports':
+                currentSliderScrollPos = slideWidth * 1;
+                break;
+            case 'Customization':
+                currentSliderScrollPos = slideWidth * 2;
+                break;
+            case 'Support':
+                currentSliderScrollPos = slideWidth * 4;
+                break;
+        };
+        var newSliderScrollPos = currentSliderScrollPos + slideWidth;
+
+        console.log(newSliderScrollPos);
+        
+        // Update the current slider scroll position
+        currentSliderScrollPos = newSliderScrollPos;
+        // cus sup 300
+        //sup 300
+        // report 100 200
+        // pay 50
+        
+        // Scroll to the next slide
+        sliderElement.scrollTo(newSliderScrollPos, 0);
+    });
+});
