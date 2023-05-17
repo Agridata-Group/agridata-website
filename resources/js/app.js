@@ -65,9 +65,6 @@ function secBtnToggle() {
 }
 
 function reportPagination() {
-    const reportImg1 = document.getElementById('report-1');
-    const reportImg2 = document.getElementById('report-2');
-
     const leftBtn = document.getElementById('rep-left-btn');
     const rightBtn = document.getElementById('rep-right-btn');
 
@@ -94,15 +91,21 @@ function reportPagination() {
     }
 
     function updateImages() {
-        const reportImg1 = document.querySelector('#report-1');
-        const reportImg2 = document.querySelector('#report-2');
+        /* const reportImg1 = document.querySelector('#report-1');
+        const reportImg2 = document.querySelector('#report-2'); */
+        const reportA = document.querySelector('#rA');
+        const reportB = document.querySelector('#rB');
 
         if (currentIndex === 0) {
-            reportImg1.style.zIndex = 0;
-            reportImg2.style.zIndex = 1;
+            /* reportImg1.style.zIndex = 0;
+            reportImg2.style.zIndex = 1; */
+            reportA.style.display = "block";
+            reportB.style.display = "none";
         } else {
-            reportImg1.style.zIndex = 1;
-            reportImg2.style.zIndex = 0;
+            /* reportImg1.style.zIndex = 1;
+            reportImg2.style.zIndex = 0; */
+            reportA.style.display = "none";
+            reportB.style.display = "block";
         }
     }
 

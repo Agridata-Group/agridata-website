@@ -18,6 +18,8 @@
     <!-- Primary Meta Tags -->
     <title>AGRIDATA PORTAL</title>
     <link rel="icon" href="./assets/image/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="title" content="AGRIDATA PORTAL">
     <meta name="description"
         content="An AgriTech platform enabling Market Accessibility, Financing and Diverse Income Streams to Farmers and Businesses👨‍💻🌾💰">
@@ -42,9 +44,9 @@
 <body data-bs-spy="scroll" data-bs-target="#secondary-nav" data-bs-smooth-scroll="true" data-bs-offset="10">
     <div w3-include-html="./resources/components/nav-bar.html"></div>
 
-    <div class="container-md" style="display: none;">
+    <!-- <div class="container-md">
         <div class="row align-items-start mt-5 mb-5">
-            <div class="col-md-6 ">
+            <div class="col-md-6">
                 <h2 class="big-title">
                     Lorem ipsum
                     dolor sit amet
@@ -67,15 +69,16 @@
                 <img src="./assets/image/Tech Tech Website.png" alt="Tech Website">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-md py-5">
         <div class="row">
-            <div class="col-12 col-lg m-3 m-lg-0">
-                <h1>
+            <div class="col-12 col-lg m-lg-0">
+                <h2 class="big-title">
                     Green And Digital Is The NEW GOLD
-                </h1>
-                <p class="fs-5">Disrupting The Traditional Agriculture Landscape and Transforming The Way Farmers, Consumers and
+                </h2>
+                <p class="fs-5">Disrupting The Traditional Agriculture Landscape and Transforming The Way Farmers,
+                    Consumers and
                     Businesses Interact and Earn </p>
                 <button class="dark-btn">Download AG-FUND for Free</button>
 
@@ -88,7 +91,7 @@
                     <img src="./assets/image/pitchborneo.svg" alt="">
                 </div>
             </div>
-            <div class="col-12 col-lg m-3 m-lg-0 carousel-rotate">
+            <div class="col-12 col-lg my-3 m-lg-0 carousel-rotate">
                 <img src="./assets/image/homepage 1.png" class="single-slide" data-order="1" alt="Tech Website">
                 <img src="./assets/image/homepage 2.png" class="single-slide" data-order="2" alt="Tech Website">
                 <img src="./assets/image/homepage 5.png" class="single-slide" data-order="3" alt="Tech Website">
@@ -275,9 +278,9 @@
                     finances</p>
             </div>
             <div class="row pt-3">
-                <div class="col-md-6 text-start">
-                    <div class="row pb-3 ps-5">
-                        <div class="col-md-1 pe-3">
+                <div class="col-12 col-lg-6 text-start">
+                    <div class="row pb-3 ps-0">
+                        <div class="col-2 col-md-1 pe-3">
                             <img src="./assets/image/Handshake Heart.svg" alt="">
                         </div>
                         <div class="col-10 col-md-7 col-sm-1">
@@ -285,33 +288,31 @@
                                 just for you!</p>
                         </div>
                     </div>
-
-                    <div class="row ps-5">
-                        <div class="col-md-1 pe-3">
+                    <div class="row ps-0">
+                        <div class="col-2 col-md-1 pe-3">
                             <img src="./assets/image/Cloud Storage.svg" alt="">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-10 col-md-7">
                             <p class="white-text ps-5">Peace of mind knowing your financial data is secure.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-start">
-                    <div class="row pb-3 ps-5">
-                        <div class="col-md-1 pe-3">
+                <div class="col-12 col-lg-6 text-start">
+                    <div class="row pb-3 ps-0">
+                        <div class="col-2 col-md-1 pe-3">
                             <img src="./assets/image/Shop Location.svg" alt="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-10 col-md-8">
                             <p class="white-text align-middle ps-5">A complete overview of your business health --
                                 anytime,
                                 anywhere!</p>
                         </div>
                     </div>
-
-                    <div class="row ps-5">
-                        <div class="col-md-1 pe-3">
+                    <div class="row ps-0">
+                        <div class="col-2 col-md-1 pe-3">
                             <img src="./assets/image/Staff.svg" alt="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-10 col-md-8">
                             <p class="white-text ps-5">Experience stellar support, guiding you every step of the way on
                                 your
                                 financial
@@ -329,7 +330,7 @@
         </div>
     </div>
     <section class="container-fluid bg-lightblue text-center sticky-top py-3" style="top: 100px;">
-        <div id="secondary-nav" class="container-md row mx-auto secondary-nav">
+        <div id="secondary-nav" class="container-fluid container-lg row mx-auto secondary-nav" style="overflow-x: scroll;">
             <div class="d-flex justify-content-center">
                 <a href="#invoicing" class="sec-nav-btn"> Invoicing </a>
                 <a href="#payment" class="sec-nav-btn ms-3"> Payments </a>
@@ -340,19 +341,16 @@
         </div>
     </section>
 
-    <div>
+    <section>
         <section class="container-fluid bg-lightblue section" id="invoicing">
-            <div class="container-md py-5" style="height: 100%;">
-                <div class="d-flex flex-sm-column flex-lg-row px-5 pe-5">
-                    <div class="d-flex d-flex-inline order-0 justify-content-center">
-                        <img src="./assets/image/Invoicing 1.png" alt="">
-                        <span class="img-box d-flex-inline mx-2 my-3 align-self-start">
-                            <img src="./assets/image/invoicing 2.png" class="my-2" style="height: fit-content;" alt="">
-                        </span>
+            <div class="container-md py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/image/invoicing.png" alt="" class="img-fluid mx-auto d-block">
                     </div>
-                    <div class="text-start ps-lg-5 align-middle order-1 my-lg-auto my-2">
-                        <div class="justify-content-center align-self-lg-center ps-lg-5 pt-3 pt-lg-0">
-                            <div class="ps-lg-5">
+                    <div class="col-md-6 d-flex">
+                        <div class="text-start align-middle order-1 my-lg-auto my-2">
+                            <div class="justify-content-center align-self-lg-center pt-3 pt-lg-0">
                                 <h3 class="small-title">Invoicing</h3>
                                 <h4 class="pt-3">Make professional invoices quickly and easily</h4>
                                 <p>Customize and instantly send professional invoices, record all expenses, and keep
@@ -368,7 +366,7 @@
             </div>
         </section>
 
-        <section class="container-fluid bg-blue-gradient-1 py-5 section" id="payment">
+        <!-- <section class="container-fluid bg-blue-gradient-1 py-5 section" id="payment">
             <div class="container-md py-5">
                 <div class="flex-sm-column flex-lg-row px-5 pe-5">
                     <div class="mx-2 ps-5 ps-lg-0">
@@ -405,9 +403,34 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section class="container-fluid bg-blue-gradient-1 py-5 section" id="payment">
+            <div class="container-md py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/image/payment.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="text-start align-middle order-1 my-lg-auto my-2">
+                            <div class="justify-content-center align-self-lg-center pt-3 pt-lg-0">
+                                <h3 class="small-title">Payments</h3>
+                                <h4 class="pt-3">Never miss unpaid receivables</h4>
+                                <p>Ditch unreliable and vulnerable bill books. Keep tabs on unpaid invoices, customize
+                                    payment
+                                    terms, and record installment payments. Keep your payments organized and avoid
+                                    unsettled
+                                    transactions.</p>
+                                <a href="" class="learn-more" style="display: none;">Learn more<i
+                                        class="fa-solid fa-arrow-right-long ps-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="container-fluid bg-blue-gradient-2 py-5 section" id="report">
+        <!-- <section class="container-fluid bg-blue-gradient-2 py-5 section" id="report">
             <div class="container-md py-5">
                 <div class="d-flex flex-sm-column flex-lg-row px-5">
                     <div class="flex-column">
@@ -449,17 +472,63 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section> -->
 
+        <section class="container-fluid bg-blue-gradient-2 py-5 section" id="report">
+            <div class="container-md py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <button class="report-arrow-icon" id="rep-left-btn">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                            </div>
+                            <div class="col-8">
+                                <img src="./assets/image/reports A.png" alt="" class="img-fluid mx-auto" id="rA">
+                                <img src="./assets/image/reports B.png" alt="" class="img-fluid mx-auto" id="rB" style="display: none;">
+                            </div>
+                            <div class="col-1">
+                                <button class="report-arrow-icon" id="rep-right-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="report-pagination-active mt-3" id="report-page1"></div>
+                                <div class="report-pagination ms-2 mt-3" id="report-page2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="text-start align-middle order-1 my-lg-auto my-2">
+                            <div class="justify-content-center align-self-lg-center pt-3 pt-lg-0">
+                                <h3 class="small-title">Reports</h3>
+                                <h4 class="pt-3">Manage and improve your cash flow, effortlessly</h4>
+                                <p>Instant generation of cashbook reports and debtor's reports with real-time profit
+                                    monitoring
+                                    is like having a superhero on your team. With just a few clicks, these reports can
+                                    swoop
+                                    in
+                                    and save the day by providing a clear and concise overview of your finances.</p>
+                                <a href="" class="learn-more" style="display: none;">Learn more<i
+                                        class="fa-solid fa-arrow-right-long ps-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="container-fluid bg-blue-gradient-3 py-5 section" id="customization">
             <div class="container-md py-5">
-                <div class="d-flex flex-sm-column flex-lg-row px-5">
-                    <img src="./assets/image/Customization 1.png" alt="">
-                    <div class="text-start ps-4 align-middle order-1 my-lg-auto my-2">
-                        <div class="ps-4">
-                            <div class="align-self-center ps-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/image/Customization 1.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="text-start align-middle order-1 my-lg-auto my-2">
+                            <div class="justify-content-center align-self-lg-center pt-3 pt-lg-0">
                                 <h3 class="small-title">Customization</h3>
                                 <h4 class="pt-3">Be the ultimate financial multitasker, juggling businesses, currencies,
                                     and
@@ -479,25 +548,29 @@
 
         <section class="container-fluid bg-blue-gradient-4 py-5 section" id="support">
             <div class="container-md py-5">
-                <div class="d-flex flex-sm-column flex-lg-row px-5">
-                    <img src="./assets/image/support.png" alt="">
-                    <div class="text-start ps-5 align-middle order-1 my-lg-auto my-2">
-                        <div class="align-self-center ps-4">
-                            <h3 class="small-title">Support</h3>
-                            <h4 class="pt-3">Have a personal accounting buddy who's always ready to help</h4>
-                            <p>AG-FUND's customer support is known for being friendly, approachable, and highly
-                                knowledgeable. They go out of their way to make customers feel comfortable and are
-                                always
-                                happy to assist with any questions or concerns.</p>
-                            <a href="" class="learn-more" style="display: none;">Learn more<i
-                                    class="fa-solid fa-arrow-right-long ps-1"></i></a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/image/support.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="text-start align-middle order-1 my-lg-auto my-2">
+                            <div class="justify-content-center align-self-lg-center pt-3 pt-lg-0">
+                                <h3 class="small-title">Support</h3>
+                                <h4 class="pt-3">Have a personal accounting buddy who's always ready to help</h4>
+                                <p>AG-FUND's customer support is known for being friendly, approachable, and highly
+                                    knowledgeable. They go out of their way to make customers feel comfortable and are
+                                    always
+                                    happy to assist with any questions or concerns.</p>
+                                <a href="" class="learn-more" style="display: none;">Learn more<i
+                                        class="fa-solid fa-arrow-right-long ps-1"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    <!-- <div class="container-md py-5">
+
+        <!-- <div class="container-md py-5">
         <div class="flex-column my-5 text-box-1 bg-lightblue">
             <div class="d-flex-inline">
                 <h1>Crafted with
@@ -522,7 +595,7 @@
         </div>
     </div> -->
 
-    <div w3-include-html="./resources/components/footer.html"></div>
+        <div w3-include-html="./resources/components/footer.html"></div>
 </body>
 
 <script>
