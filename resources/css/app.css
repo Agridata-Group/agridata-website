@@ -45,6 +45,12 @@ ul {
     padding-right: 7.57%;
     padding-left: 7.57%;
     height: 100px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.topnav:hover {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
 }
 
 .topnav a {
@@ -1059,6 +1065,10 @@ ul {
     padding-bottom: 3%;
 }
 
+.slide-description {
+    padding-top: 10%;
+}
+
 .about-us-slide p {
     padding-bottom: 25px;
 }
@@ -1071,9 +1081,14 @@ ul {
     padding-bottom: 25px;
 }
 
+.about-us-slide-img {
+    padding-top: 7%;
+}
+
+
+
 .button-arrow {
-    position: absolute;
-    bottom: 15%;
+    padding-bottom: 3%;
 }
 
 /* .about-us-journey img {
@@ -1361,6 +1376,10 @@ ul {
 
     }
 
+    .about-us-slide-img {
+        padding-top: 0;
+    }
+
     .indicator {
         display: none !important;
     }
@@ -1368,6 +1387,7 @@ ul {
     .button-arrow {
         position: relative;
         justify-content: center;
+        padding-top: 5%;
     }
 
 
@@ -1378,6 +1398,7 @@ ul {
     .button-arrow {
         position: relative;
         justify-content: center;
+        padding-top: 5%;
     }
 
     .indicator {
@@ -1388,7 +1409,7 @@ ul {
 
     .topnav a:not(:first-child),
     .drpdown .dropbtn,
-    .get-started {
+    .get-started{
         display: none;
     }
 
@@ -1407,7 +1428,7 @@ ul {
         padding-right: 0;
         padding-top: 0;
         padding-bottom: 10px;
-            box-shadow: 0px 3px 7px rgba(0, 66, 155, 0.3), 0px 16px 20px rgba(0, 66, 155, 0.2);
+        box-shadow: 0px 3px 7px rgba(0, 66, 155, 0.3), 0px 16px 20px rgba(0, 66, 155, 0.2);
     }
 
     .topnav a,
@@ -1420,7 +1441,7 @@ ul {
         display: block;
         justify-content: center;
     }
-
+    
     .drpdown-content {
         height: auto;
     }
@@ -1429,7 +1450,7 @@ ul {
         border-bottom: none
     }
 
-    /*--------------------------------*/
+/*--------------------------------*/
 
     .topnav.responsive {
         position: relative;
@@ -1472,7 +1493,7 @@ ul {
         float: none;
         display: block;
     }
-
+    
     /*------------------------------------------------*/
 
     .big-title {
@@ -1620,6 +1641,10 @@ ul {
 
     .about-us-journey-right p {
         font-size: 15px;
+    }
+
+    .about-us-slide-img {
+        padding-top: 0;
     }
 
     .button-arrow {
