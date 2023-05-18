@@ -224,7 +224,7 @@ function topNav() {
 $(document).ready(function () {
     $(window).on('activate.bs.scrollspy', function (obj) {
         var x = $("#secondary-nav .active").text();
-        console.log(x);
+        //console.log(x);
 
 
         var sliderElement = document.querySelector('#secondary-nav'),
@@ -251,7 +251,7 @@ $(document).ready(function () {
         };
         var newSliderScrollPos = currentSliderScrollPos + slideWidth;
 
-        console.log(newSliderScrollPos);
+        //console.log(newSliderScrollPos);
         
         // Update the current slider scroll position
         currentSliderScrollPos = newSliderScrollPos;
@@ -277,5 +277,4 @@ $(document).ready(function () {
         OSName = "iOS";
         $('.downloadApp').attr('href',"https://apps.apple.com/us/app/ag-fund/id1622978102");
     }
-
 });
