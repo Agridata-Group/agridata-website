@@ -45,8 +45,6 @@ ul {
     padding-right: 7.57%;
     padding-left: 7.57%;
     height: 100px;
-    position: sticky;
-    position: -webkit-sticky;
 }
 
 .topnav:hover {
