@@ -45,8 +45,6 @@ ul {
     padding-right: 7.57%;
     padding-left: 7.57%;
     height: 100px;
-    position: sticky;
-    position: -webkit-sticky;
 }
 
 .topnav:hover {
@@ -1376,11 +1374,6 @@ ul {
 
     }
 
-    .mobile-padding {
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-
     .about-us-slide-img {
         padding-top: 0;
     }
@@ -1648,11 +1641,6 @@ ul {
         font-size: 15px;
     }
 
-    .mobile-padding {
-        padding-top: 20px;
-
-    }
-
     .about-us-slide-img {
         padding-top: 0;
     }
@@ -1691,10 +1679,6 @@ ul {
 
     .about-us-slide {
         padding-bottom: 7%;
-    }
-    .mobile-padding {
-        padding-top: 20px;
-
     }
 
     .button-arrow {

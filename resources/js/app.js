@@ -65,7 +65,9 @@ function secBtnToggle() {
 }
 
 function reportPagination() {
-    const leftBtn = document.getElementById('rep-left-btn');
+    const leftBtn = $('#rep-left-btn');
+    //const leftBtn = document.getElementById('rep-left-btn');
+    
     const rightBtn = document.getElementById('rep-right-btn');
 
     const firstDot = document.getElementById('report-page1');
@@ -140,7 +142,7 @@ function reportPagination() {
         /* console.log(currentIndex); */
     }
 
-    leftBtn.addEventListener('click', handleLeftClick);
+    leftBtn.click(handleLeftClick);
     rightBtn.addEventListener('click', handleRightClick);
 }
 
@@ -261,4 +263,19 @@ $(document).ready(function () {
         // Scroll to the next slide
         sliderElement.scrollTo(newSliderScrollPos, 0);
     });
+
+    var OSName="Unknown OS";
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        OSName = "Android";
+        $('.downloadApp').attr('href',"https://play.google.com/store/apps/details?id=com.fatimajannat.agfund&pli=1");
+    }
+    
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        OSName = "iOS";
+        $('.downloadApp').attr('href',"https://apps.apple.com/us/app/ag-fund/id1622978102");
+    }
+
 });

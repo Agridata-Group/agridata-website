@@ -44,7 +44,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#secondary-nav" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -40%">
-    <div class="container-fluid sticky-top px-0" w3-include-html="./resources/components/nav-bar.html"></div>
+    <div class="container-fluid sticky-top px-0" w3-include-html="./resources/components/nav-bar.html" style="z-index: 200!important;"></div>
 
     <!-- <div class="container-md">
         <div class="row align-items-start mt-5 mb-5">
@@ -82,7 +82,7 @@
                 <p class="fs-5">Disrupting The Traditional Agriculture Landscape and Transforming The Way Farmers,
                     Consumers and
                     Businesses Interact and Earn </p>
-                <button class="dark-btn">Download AG-FUND for Free</button>
+                <a href="./download-page.html" id="downloadApp" class="col-6 dark-btn downloadApp">Download AG-FUND for Free</a>
 
                 <p class="blurred mt-5">Worked with the best</p>
 
@@ -331,7 +331,7 @@
             <h2 class="medium-title">Achieve More with Less Effort: Our App Has You Covered</h2>
         </div>
     </div>
-    <section class="bg-lightblue sticky-top py-3" style="top: 99px!important;">
+    <section class="bg-lightblue sticky-top py-3" style="top: 99px!important; z-index: 10!important;">
         <nav id="secondary-nav" class="d-flex container-fluid mx-0 justify-content-md-center overflow-auto" style="">
             <a href="#invoicing" class="sec-nav-btn">Invoicing</a>
             <a href="#payment" class="sec-nav-btn ms-3">Payments</a>
