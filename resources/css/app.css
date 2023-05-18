@@ -1240,6 +1240,9 @@ ul {
     justify-items: flex-end;
 }
 
+.sec-nav-top {
+    top: 99px!important;
+}
 
 
 
@@ -1388,7 +1391,9 @@ ul {
         padding-top: 5%;
     }
 
-
+    .sec-nav-top {
+        top: 79px!important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1511,6 +1516,10 @@ ul {
         font-weight: 600;
         font-size: 20px;
         line-height: 40px;
+    }
+
+    .sec-nav-top {
+        top: 79px!important;
     }
 
 }
@@ -1666,6 +1675,10 @@ ul {
         font-weight: 600;
         font-size: 28px;
         line-height: 40px;
+    }
+
+    .sec-nav-top {
+        top: 79px!important;
     }
 }
 
