@@ -1045,7 +1045,7 @@ ul {
 }
 
 .about-us-journey-right {
-    padding: 7%;
+    padding: 9%;
 }
 
 .about-us-journey-right h2 {
@@ -1376,6 +1376,11 @@ ul {
 
     }
 
+    .mobile-padding {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
     .about-us-slide-img {
         padding-top: 0;
     }
@@ -1643,6 +1648,11 @@ ul {
         font-size: 15px;
     }
 
+    .mobile-padding {
+        padding-top: 20px;
+
+    }
+
     .about-us-slide-img {
         padding-top: 0;
     }
@@ -1681,6 +1691,10 @@ ul {
 
     .about-us-slide {
         padding-bottom: 7%;
+    }
+    .mobile-padding {
+        padding-top: 20px;
+
     }
 
     .button-arrow {
