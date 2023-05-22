@@ -1346,9 +1346,9 @@ ul {
     /*------------------------------------------------*/
 
     .big-title {
-        font-weight: 600;
+        font-weight: 800;
         font-size: 40px;
-        line-height: 60px;
+        line-height: 50px;
         color: #010F41;
     }
 
@@ -1504,9 +1504,9 @@ ul {
     }
 
     .big-title {
-        font-weight: 600;
-        font-size: 60px;
-        line-height: 70px;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 58px;
         color: #010F41;
     }
 
@@ -1544,9 +1544,9 @@ ul {
     }
 
     .big-title {
-        font-weight: 600;
-        font-size: 70px;
-        line-height: 100px;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 62px;
         color: #010F41;
     }
 
@@ -1566,9 +1566,9 @@ ul {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .big-title {
-        font-weight: 600;
-        font-size: 70px;
-        line-height: 100px;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 62px;
         color: #010F41;
     }
 
