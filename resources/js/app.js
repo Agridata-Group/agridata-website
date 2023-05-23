@@ -269,12 +269,12 @@ $(document).ready(function () {
 
     if (/android/i.test(userAgent)) {
         OSName = "Android";
-        $('.downloadApp').attr('href',"https://play.google.com/store/apps/details?id=com.fatimajannat.agfund&pli=1");
+        $('.downloadApp').attr('href',"https://android.agridataportal.com");
     }
     
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         OSName = "iOS";
-        $('.downloadApp').attr('href',"https://apps.apple.com/us/app/ag-fund/id1622978102");
+        $('.downloadApp').attr('href',"https://ios.agridataportal.com");
     }
 });
