@@ -65,7 +65,9 @@ function secBtnToggle() {
 }
 
 function reportPagination() {
-    const leftBtn = document.getElementById('rep-left-btn');
+    const leftBtn = $('#rep-left-btn');
+    //const leftBtn = document.getElementById('rep-left-btn');
+    
     const rightBtn = document.getElementById('rep-right-btn');
 
     const firstDot = document.getElementById('report-page1');
@@ -140,7 +142,7 @@ function reportPagination() {
         /* console.log(currentIndex); */
     }
 
-    leftBtn.addEventListener('click', handleLeftClick);
+    leftBtn.click(handleLeftClick);
     rightBtn.addEventListener('click', handleRightClick);
 }
 
@@ -222,7 +224,7 @@ function topNav() {
 $(document).ready(function () {
     $(window).on('activate.bs.scrollspy', function (obj) {
         var x = $("#secondary-nav .active").text();
-        console.log(x);
+        //console.log(x);
 
 
         var sliderElement = document.querySelector('#secondary-nav'),
@@ -249,7 +251,7 @@ $(document).ready(function () {
         };
         var newSliderScrollPos = currentSliderScrollPos + slideWidth;
 
-        console.log(newSliderScrollPos);
+        //console.log(newSliderScrollPos);
         
         // Update the current slider scroll position
         currentSliderScrollPos = newSliderScrollPos;
@@ -261,4 +263,18 @@ $(document).ready(function () {
         // Scroll to the next slide
         sliderElement.scrollTo(newSliderScrollPos, 0);
     });
+
+    var OSName="Unknown OS";
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        OSName = "Android";
+        $('.downloadApp').attr('href',"https://android.agridataportal.com");
+    }
+    
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        OSName = "iOS";
+        $('.downloadApp').attr('href',"https://ios.agridataportal.com");
+    }
 });
