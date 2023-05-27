@@ -988,7 +988,7 @@ ul {
 .about-us-header {
     padding-top: 89px;
     padding-left: 6.94%;
-    width: 55%;
+    width: 75%;
     background-color: #F8F8F8;
 }
 
@@ -996,7 +996,7 @@ ul {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 76px;
+    font-size: 56px;
 }
 
 .about-us-header p {
@@ -1368,6 +1368,32 @@ ul {
         top: 69px !important;
     }
 
+/*-----------------------------
+        ABOUT US
+----------------------------*/
+
+    .about-us-header {
+        padding-top: 50px;
+        width: 90%;
+    }
+
+    .about-us-header h2 {
+        font-size: 36px;
+    }
+    .about-us-header p {
+        font-size: 18px;
+    }
+
+    .about-us-box-content h2 {
+        font-size: 28px;
+    }
+
+    .about-us-box-content p {
+        padding-top: 0px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1469,7 +1495,7 @@ ul {
     }
 
     .about-us-header h2 {
-        font-size: 66px;
+        font-size: 46px;
     }
 
     .about-us-box-content h2 {
