@@ -1242,6 +1242,14 @@ ul {
     top: 99px !important;
 }
 
+/*-------------------------
+        Contact Us
+---------------------------*/
+
+.contact-us-box {
+    padding: 7% 7%;
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
