@@ -1644,3 +1644,8 @@ ul {
 #secondary-nav a {
     scroll-snap-align: start;
 }
+
+.swipe-frame{
+    width: 100%;
+    padding: auto;
+}

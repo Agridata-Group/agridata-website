@@ -67,7 +67,7 @@ function secBtnToggle() {
 function reportPagination() {
     const leftBtn = $('#rep-left-btn');
     //const leftBtn = document.getElementById('rep-left-btn');
-    
+
     const rightBtn = document.getElementById('rep-right-btn');
 
     const firstDot = document.getElementById('report-page1');
@@ -182,7 +182,7 @@ function changeOrder() {
 
 }
 
-function swiper(){
+function swiper() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -211,27 +211,26 @@ function swiper(){
     });
 }
 
-function homeSwiper(){
+function homeSwiper() {
     var swiper = new Swiper(".homeSwiper", {
-        slidesPerView: '6',
-        speed: 4000,
+        slidesPerView: 6,
+        spaceBetween: 0,
+        speed: 3500,
         loop: true,
+        grabCursor: true,
         autoplay: {
             delay: 1,
-            disableOnInteraction: false
+            disableOnInteraction: false,
         },
         breakpoints: {
             320: {
                 slidesPerView: 3,
-                spaceBetween: 20,
             },
             768: {
                 slidesPerView: 5,
-                spaceBetween: 50,
             },
             1024: {
                 slidesPerView: 6,
-                spaceBetween: 90,
             },
         },
     })
@@ -277,29 +276,40 @@ $(document).ready(function () {
         var newSliderScrollPos = currentSliderScrollPos + slideWidth;
 
         //console.log(newSliderScrollPos);
-        
+
         // Update the current slider scroll position
         currentSliderScrollPos = newSliderScrollPos;
         // cus sup 300
         //sup 300
         // report 100 200
         // pay 50
-        
+
         // Scroll to the next slide
         sliderElement.scrollTo(newSliderScrollPos, 0);
     });
 
-    var OSName="Unknown OS";
+    var OSName = "Unknown OS";
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent)) {
         OSName = "Android";
-        $('.downloadApp').attr('href',"https://android.agridataportal.com");
+        $('.downloadApp').attr('href', "https://android.agridataportal.com");
     }
-    
+
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         OSName = "iOS";
-        $('.downloadApp').attr('href',"https://ios.agridataportal.com");
+        $('.downloadApp').attr('href', "https://ios.agridataportal.com");
     }
+    var mySwiper = document.querySelector('.homeSwiper').swiper
+
+    $(".homeSwiper").mouseenter(function () {
+        mySwiper.autoplay.stop();
+        console.log('slider stopped');
+    });
+
+    $(".homeSwiper").mouseleave(function () {
+        mySwiper.autoplay.start();
+        console.log('slider started again');
+    });
 });
