@@ -186,7 +186,6 @@ function swiper(){
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 0,
-        // loop: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -210,6 +209,32 @@ function swiper(){
             },
         },
     });
+}
+
+function homeSwiper(){
+    var swiper = new Swiper(".homeSwiper", {
+        slidesPerView: '6',
+        speed: 4000,
+        loop: true,
+        autoplay: {
+            delay: 1,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 90,
+            },
+        },
+    })
 }
 
 function topNav() {
